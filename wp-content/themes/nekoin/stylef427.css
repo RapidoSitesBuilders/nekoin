@@ -451,11 +451,15 @@ a.full_link{
 /* Mobile Navigation */
 .nekoin_fn_mobnav{
 	display: none;
-    background: -moz-linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
-    background: linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
-	background-color: rgba(27,18,29,1);
+	background: -moz-linear-gradient(90deg, #000 0%, #000 100%);
+	background: -webkit-linear-gradient(90deg, #000 0%, #000 100%);
+	background: linear-gradient(90deg, #000 0%, #000 100%);
+	background-color: #000;
 	overflow: hidden;
+	display: block;
+    position: fixed;
+    z-index: 60;
+		
 }
 .nekoin_fn_mobnav .wallet{
 	display: none;
@@ -485,6 +489,7 @@ a.full_link{
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: space-between;
+	width: 100vw
 }
 .nekoin_fn_mobnav .mob_bot{
 	display: none;
